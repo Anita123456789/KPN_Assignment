@@ -11,6 +11,9 @@ The Functionality provide the UI build in LWC component to show the available pr
 
 For deployment please refer feature-KPN_Assignment_ComponentsCommit,the full functionality code is located in the branch named feature-KPN_Assignment_ComponentsCommit. The main remains as a new SFDX project.
 
+For the request struture and response please refer below URL :
+https://kpnassignment.requestcatcher.com/
+
 ## Preview
 
 for preview please refer feature-KPN_Assignment_Demo. 
