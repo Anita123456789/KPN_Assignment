@@ -6,8 +6,8 @@
 public class OrderProductsController {
 
      //Method is define to fetch the order items associated with order
-    @AuraEnabled (cacheable=true)
+    @AuraEnabled (cacheable=false)
     public static List<OrderItem> getOrderProducts (String orderId) {
-        return OrderProductsHelper.getOrderItems(orderId);
+        return OrderProductsService.getOrderItems(orderId);
     }
 }

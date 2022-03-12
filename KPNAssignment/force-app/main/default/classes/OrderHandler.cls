@@ -6,18 +6,17 @@ public class OrderHandler {
     //To fetch the order and its associated order items 
     public static Order getOrderDetails(String orderId) {
         
-        return [Select Id,OrderNumber,AccountId,Type,Status,
-                (Select Id,Product2.Name,Product2.ProductCode,Quantity,UnitPrice from OrderItems)
-                From Order
-                Where Id =:orderId ];
+        return [SELECT Id,OrderNumber,AccountId,Type,Status,
+                (SELECT Id,Product2.Name,Product2.ProductCode,Quantity,UnitPrice from OrderItems)
+                FROM Order
+                WHERE Id =:orderId WITH SECURITY_ENFORCED];
     }
     
     //To generate the request body
     public static OrderDataWrapper getRequestBody(Order order) {
         
      try{  
-        if (order != null) {
-            
+        if (order != null) {            
             OrderDataWrapper requestbody = new OrderDataWrapper();
             requestbody.orderNumber = order.OrderNumber;
             requestbody.accountNumber = order.AccountId;
@@ -39,7 +38,7 @@ public class OrderHandler {
             }
             
             if (orderProductList != null && !orderProductList.isEmpty()) 
-                requestbody.orderProducts = orderProductList;
+                requestbody.orderProducts = orderProductList;            
             
             return requestbody;
         } else 
@@ -82,8 +81,6 @@ public class OrderHandler {
             tobeUpdatedorderItemMap.Put(orderItemRec.id,orderItemRec);
         }
         
-        utilityClass.updateOrderItemList(tobeUpdatedorderItemMap);
-        
-        
+        OrderRepository.updateOrderItemList(tobeUpdatedorderItemMap);      
     }
 }

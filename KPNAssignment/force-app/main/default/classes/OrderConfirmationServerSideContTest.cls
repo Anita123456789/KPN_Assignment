@@ -1,7 +1,8 @@
 @isTest
 public class OrderConfirmationServerSideContTest {
     @istest 
-    public static void confirmOrderToSystemsPositive(){
+    public static void confirmOrderProcess_Positive(){
+         Id pricebookId = Test.getStandardPricebookId();
         order orderRec = TestDataFactory.createOrders();
         PricebookEntry PBE = TestDataFactory.createPricebookEntry();
         List<orderItem> orderItemList = TestDataFactory.createOrderLineItem(orderRec,PBE);
@@ -14,7 +15,7 @@ public class OrderConfirmationServerSideContTest {
     }
     
     @istest
-    public static void confirmOrderToSystemsNegative(){
+    public static void confirmOrderProcess_Negative(){
         order orderRec = TestDataFactory.createOrders();
         PricebookEntry PBE = TestDataFactory.createPricebookEntry();
         List<orderItem> orderItemList = TestDataFactory.createOrderLineItem(orderRec,PBE);
