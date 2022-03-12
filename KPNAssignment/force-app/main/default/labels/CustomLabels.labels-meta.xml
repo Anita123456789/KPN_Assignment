@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomLabels xmlns="http://soap.sforce.com/2006/04/metadata">
+    <labels>
+        <fullName>Error</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Error</shortDescription>
+        <value>Something went wrong, Contact administrator.!</value>
+    </labels>
+    <labels>
+        <fullName>OrderConfirmation</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>OrderConfirmation</shortDescription>
+        <value>Confirm Order</value>
+    </labels>
+    <labels>
+        <fullName>OrderConfirmed</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>OrderConfirmed</shortDescription>
+        <value>Order Confirmed Successfully.!</value>
+    </labels>
+    <labels>
+        <fullName>OrderSubmitEndPoint</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>OrderSubmitEndPoint</shortDescription>
+        <value>https://kpnassignment.requestcatcher.com/test</value>
+    </labels>
+    <labels>
+        <fullName>PriceBookMissing</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>PriceBookMissing</shortDescription>
+        <value>Order Doesnot have Pricebook associated with it.!</value>
+    </labels>
+    <labels>
+        <fullName>ProductNotSelected</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>ProductNotSelected</shortDescription>
+        <value>Please Select Product first.!</value>
+    </labels>
+    <labels>
+        <fullName>SuccessfulProdAdded</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>SuccessfulProdAdded</shortDescription>
+        <value>Order Products Added Or Updated Successfully.!</value>
+    </labels>
+    <labels>
+        <fullName>Error_Message</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Error_Message</shortDescription>
+        <value>Something went wrong, Contact administrator.!</value>
+    </labels>
+</CustomLabels>
