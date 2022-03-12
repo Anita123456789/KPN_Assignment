@@ -7,6 +7,6 @@ public with sharing class OrderConfirmationServerSideController {
     
 	@AuraEnabled (cacheable=false)
     public static string confirmOrder(String orderId) { 		
-        return OrderConfirmationHelper.confirmOrder(orderId);
+        return OrderConfirmationService.confirmOrder(orderId);
     }
 }

@@ -47,8 +47,8 @@
     <flexiPageRegions>
         <itemInstances>
             <componentInstance>
-                <componentName>force:detailPanel</componentName>
-                <identifier>force_detailPanel1</identifier>
+                <componentName>availableProductsDisplay</componentName>
+                <identifier>c_availableProductsDisplay1</identifier>
             </componentInstance>
         </itemInstances>
         <name>leftcol</name>
@@ -59,12 +59,6 @@
             <componentInstance>
                 <componentName>orderConfirmation</componentName>
                 <identifier>c_orderConfirmation1</identifier>
-            </componentInstance>
-        </itemInstances>
-        <itemInstances>
-            <componentInstance>
-                <componentName>availableProductsDisplay</componentName>
-                <identifier>c_availableProductsDisplay1</identifier>
             </componentInstance>
         </itemInstances>
         <itemInstances>
